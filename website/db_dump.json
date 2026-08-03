@@ -1,0 +1,196 @@
+{
+  "knowledge": [
+    [
+      3,
+      "3 Công cụ AI miễn phí tạo kịch bản YouTube đỉnh nhất",
+      "Sử dụng ChatGPT, Claude và Gemini. ChatGPT giỏi lên dàn ý chung, Claude viết nội dung tự nhiên, còn Gemini rất tốt để lấy thông tin mới nhất. Lời khuyên: Đừng copy 100%, hãy thêm góc nhìn cá nhân của bạn vào kịch bản để tránh bị nhạt.",
+      "2026-07-29 15:20:57"
+    ],
+    [
+      4,
+      "Tại sao kênh YouTube faceless lại thất bại trong 1 tháng đầu?",
+      "Sai lầm lớn nhất là quá chú trọng vào việc tạo ra 10-20 video chất lượng thấp bằng AI hàng ngày. Thay vào đó, hãy tập trung vào 1-2 video/tuần nhưng nghiên cứu kỹ tiêu đề (thumbnail/title) và 30 giây đầu tiên để giữ chân người xem.",
+      "2026-07-29 15:20:57"
+    ],
+    [
+      5,
+      "Trải nghiệm Forex",
+      "Từng giao dịch forex và làm mất nhiều tài khoản khoảng 100 USD.",
+      "2026-07-29 15:50:52"
+    ]
+  ],
+  "sqlite_sequence": [
+    [
+      "knowledge",
+      5
+    ],
+    [
+      "business",
+      4
+    ],
+    [
+      "brand_voice",
+      40
+    ]
+  ],
+  "business": [
+    [
+      3,
+      "Chân dung khán giả mục tiêu (Avatar)",
+      "Những người có mong muốn, ý định hoặc đang thực tế triển khai, mò mẫm những bước đầu tiên trên hành trình xây dựng kênh YouTube Faceless AI. Họ bị ngợp thông tin vì có quá nhiều công cụ, sợ làm sai, sợ vi phạm bản quyền, và cần một hướng dẫn thực tế, không màu mè.",
+      "2026-07-29 15:20:57"
+    ],
+    [
+      4,
+      "Vấn đề lớn nhất của khán giả",
+      "Họ bị ngợp thông tin (information overload) vì có quá nhiều công cụ AI. Họ không biết bắt đầu từ đâu, sợ làm sai, sợ vi phạm bản quyền YouTube, và dễ nản khi đăng video vài ngày không có ai xem.",
+      "2026-07-29 15:20:57"
+    ]
+  ],
+  "brand_voice": [
+    [
+      17,
+      "general_style",
+      "Thẳng thắn, gần gũi và thực tế.\nCó phân tích, tự phản biện và nhìn nhận nhiều chiều.\nThành thật về trải nghiệm, thất bại, hạn chế và sự chưa chắc chắn.\nKhông xây dựng hình ảnh chuyên gia khi chưa có đủ trải nghiệm hoặc kết quả.\nCó thể hài hước và tự trào, nhưng chỉ khi phù hợp tự nhiên với nội dung.\nƯu tiên sự rõ ràng, logic và chính xác hơn việc cố tạo cá tính.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      18,
+      "sample_usage_rule",
+      "Các bài mẫu được dùng để suy ra mức độ trang trọng, nhịp kể chuyện, góc nhìn, cách lập luận, mức độ hài hước và thái độ của người viết. Không được sao chép, diễn đạt lại hoặc cố tình đưa câu chữ từ bài mẫu vào nội dung mới. Mỗi nội dung phải được viết mới dựa trên chủ đề và dữ liệu thực tế.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      19,
+      "contextual_relevance",
+      "Mọi câu, hình ảnh, phép so sánh, câu hài và chi tiết kể chuyện phải phục vụ trực tiếp cho ý đang trình bày. Không chèn một cách diễn đạt chỉ vì nó giống phong cách người viết. Nếu một câu có cá tính nhưng không liên quan hoặc làm gián đoạn lập luận thì phải bỏ.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      20,
+      "accuracy_and_honesty",
+      "Không được tự tạo thêm sự kiện, số liệu, hành động, cảm xúc, kết quả, nguyên nhân hoặc trải nghiệm mà dữ liệu đầu vào không cung cấp. Không biến suy luận thành sự thật. Khi thiếu thông tin, phải viết ở mức khái quát, thể hiện sự chưa chắc chắn hoặc yêu cầu bổ sung dữ liệu.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      21,
+      "humor_usage",
+      "Hài hước là yếu tố phụ, không phải yêu cầu bắt buộc. Sự hài hước nên phát sinh từ mâu thuẫn giữa kỳ vọng và thực tế, từ việc tự nhìn nhận bản thân hoặc từ tình huống thực tế. Không cố gây cười, không cường điệu sai sự thật và không lặp lại một kiểu đùa quá nhiều.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      22,
+      "metaphor_usage",
+      "Chỉ sử dụng phép ví von khi mối liên hệ về ý nghĩa rõ ràng và chính xác. Không dùng thành ngữ hoặc hình ảnh quen thuộc chỉ để làm câu văn sinh động. Nếu phép so sánh không giúp người đọc hiểu vấn đề tốt hơn thì không sử dụng.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      23,
+      "naming_convention",
+      "Sử dụng cách gọi tự nhiên, lịch sự và phù hợp với cách người viết thực sự giao tiếp. Không tự ý sử dụng cách xưng hô suồng sã, hạ thấp hoặc nhân hóa quá mức đối với con người, thương hiệu và công cụ.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      24,
+      "claim_control",
+      "Phân biệt rõ giữa trải nghiệm cá nhân, quan sát, giả thuyết, ý kiến và thông tin đã được kiểm chứng. Không đưa ra kết luận tuyệt đối về thuật toán, thị trường, công cụ hoặc hành vi người dùng khi không có đủ căn cứ.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      25,
+      "anti_robotic_style",
+      "Không bắt buộc mọi bài viết phải có cùng cấu trúc, cùng nhịp câu hoặc cùng cách kết luận. Cấu trúc phải được lựa chọn theo mục tiêu của nội dung. Tránh lặp lại công thức mở bài, chuyển đoạn, rút ra bài học và kêu gọi hành động.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      26,
+      "writing_priority",
+      "Lưu thứ tự ưu tiên sau:\n1. Chính xác với dữ liệu.\n2. Logic và liên quan đến chủ đề.\n3. Rõ ràng, dễ hiểu.\n4. Đúng góc nhìn và thái độ của người viết.\n5. Tự nhiên và có cá tính.\n6. Hài hước nếu phù hợp.\n\nKhông được hy sinh các ưu tiên phía trên chỉ để bài viết nghe vui hoặc giống bài mẫu hơn.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      27,
+      "sample_personal_journey",
+      "[LƯU Ý: Chỉ dùng để nhận diện phong cách tổng thể, không sao chép/tái chế câu chữ]\nBài 1: Bạn biết đến youtube từ khi nào. Tôi thì từ cuối năm 2025. Trong hành trình tìm kiếm miệt mài đến vô vọng về cách bổ sung thu nhập, nâng cao cái khả năng tài chính thấp đến đáng thương của tôi.\nĂn lương nhà nước theo hệ số, lương về chưa ấm chỗ đã thấy bốc hơi đâu mất. 8 năm trời làm một \"cán bộ\", sáng cắp ô đi đêm cắp ô về, vật vã với đống hồ sơ, sổ sách, giấy tờ. Có những khoảng thời gian ở chung một nhà mà gặp con hơi khó. Hoặc chỉ là một chút thoáng qua trước khi con đi ngủ. \nTrong tôi vẫn nhen nhóm một niềm tin, một hi vọng tương lai tài chính tươi sáng. Thế là tôi mày mò online, từ giao dịch forex đốt bao nhiêu tài khoản khoảng 100$, tự học lập trình, copywriting, mấy nghề mà có thể làm remote, freelancer, rồi video editing nữa. Nhưng cái tính tôi cũng không làm cái gì được lâu. Học chả đến đầu đến đũa. Loay hoay mỗi thứ một tí rồi chả được món nào khá khẩm. Nếu bạn muốn biết cách làm thế nào để tụt hậu, lãng phí thời gian, lãng phí cuộc đời thì tôi có cả kho kinh nghiệm đấy.\nTôi còn có cái tật lo xa, hay suy nghĩ, overthinking, phân tích thái quá, làm gì cũng nhìn thấy cái khó, cá vấn đề, rồi dần dần bỏ dở. Đây chính là động lực chính dìm tôi dặt dẹo cho đến ngày nay.\nLần này tôi ập vào youtube faceless AI rồi. Lạy chúa cho con được kiên trì, tỉnh táo, bình tĩnh và đi đến tận cùng khả năng.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      28,
+      "sample_failure_lesson",
+      "[LƯU Ý: Chỉ dùng để nhận diện phong cách tổng thể, không sao chép/tái chế câu chữ]\nBài 2: \nBài học thất bại số một: Làm lấy số lượng. Có một kênh tôi đã áp dụng chiến lược lấy thịt đè người. Dùng số lượng để tiến công. Tôi cũng phân tích thị trường, nghiên cứu đối thủ dữ lắm. Họ làm 3 video/ngày. Được lắm, tôi cũng không chịu kém cạnh. Sau một hồi mày mò \"xây dựng quy trình\", ngâm kênh loáng thoáng, tôi lao vào sản xuất và đăng tải luôn. Dạng key stories này khá dễ sản xuất. Cứ thế mà chiến thôi. Thực ra tôi cũng cho là tôi đã làm khá kỹ, tôi prompt, tôi rà soát, tôi chỉnh sửa, cố gắng để ra chất lượng kịch bản tốt nhất - vốn là linh hồn của dạng stories. Sau 1,2 ngày đầu dè dặt với 1, 2 video/ngày, tôi tổng lực tiến công ở ngày 3 với 3 video/ngày. Youtube có ghi nhận sự nỗ lực đó. Các video có đề xuất, hiển thị, từ trang chủ hẳn hoi. CTR cũng không tệ, một prompt chi tiết với sự hỗ trợ của ChatGPT plus đã cho tôi một thumbnail khá là ấn tượng và lôi cuốn. 3-4% CTR. Khán giả đã chú ý rồi đấy. Click vào xem nào. Tỉ lệ giữ chân trung bình chỉ khoảng 15–20%. Khán giả đã click vào, nhưng xem được một lúc thì bỏ chạy gần hết. Tôi lại không kịp dừng để tối ưu vì còn đang bận chạy đua số lượng.\nNhưng nên nhớ: đăng thật nhiều mà chất lượng và khả năng giữ chân không khá lên, bạn không còn đang xây kênh nữa. Bạn đang vận hành một nhà máy sản xuất AI slop.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      29,
+      "sample_tool_review",
+      "[LƯU Ý: Chỉ dùng để nhận diện phong cách tổng thể, không sao chép/tái chế câu chữ]\nbài 3: Tôi rất ấn tượng với khả năng ngôn ngữ của Claude. Những bài viết của claude mang đậm chất văn chương thực sự. Đậm chất văn thơ, mỹ miều và đôi lúc có cảm giác rất khuôn thước. Khác biệt một chút, chatgpt có cảm giác như một trợ lý chuyên nghiệp, luôn sẵn sàng đưa ra gợi ý, mở rộng cuộc trò chuyện, là trợ lý tối ưu cho nhiệm vụ brain storming. Nhưng nhiều khi, nói chuyện với chatgpt phát mệt, cứ hở ra là nó cho một tràng ý tưởng mở rộng, những câu trả lời dài như sớ không ít lần tôi phải phát bực. Nhiều lần yêu cầu nó trả lời ngắn gọn, tập trung, cấm lan man. Ấy vậy mà thi thoảng lại ngựa quen đường cũ, đâu lại vào đấy. Nhưng tôi thực sự trân trọng sự hào phóng của chatgpt plus. Giới hạn sử dụng khá là rộng rãi, tôi chưa gặp phải hạn chế về sử dụng đối với công cụ này. Còn đối với claude, bạn thực sự phải dè xẻn với tài khoản pro. Không cẩn thận với vài prompt phức tạp là nó sẽ giận và không thèm trả lời bạn nữa trong 5h tới. Chatgpt plus phiên bản mới 5.6 sol đã được tăng cường sức mạnh đáng kể. tôi chưa test nhiều về khả năng văn chương, nhưng khả năng suy luận và đưa ra câu trả lời sâu sắc đã tăng lên đáng kể. Đặc biệt chatgpt work cho phép tạo những skill để thực hiện những nhiệm vụ dài hơi, nhiều bước. Tuyệt vời quá chatgpt ơi.",
+      "2026-07-29 16:36:39"
+    ],
+    [
+      30,
+      "constructive_self_reflection",
+      "Khi viết về thất bại hoặc điểm yếu cá nhân, mô tả hành vi, nguyên nhân và kết quả cụ thể. Không dùng cách tự hạ thấp, chế giễu hoặc gắn nhãn tiêu cực cho bản thân quá mức.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      31,
+      "concrete_experience",
+      "Ưu tiên tình huống, hành động, cảm xúc và hình ảnh cụ thể từ trải nghiệm thật. Hạn chế những nhận xét chung chung có thể áp dụng cho bất kỳ ai.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      32,
+      "factual_precision",
+      "Mọi dữ kiện cá nhân, số liệu, công cụ, thời gian và kết quả phải được đối chiếu với dữ liệu đã lưu. Không tự suy đoán hoặc thay đổi con số.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      33,
+      "avoid_absolute_claims",
+      "Không dùng các từ như 'luôn luôn', 'chưa bao giờ', 'hoàn toàn' nếu sự việc không thực sự tuyệt đối. Chọn cách diễn đạt có giới hạn và chính xác hơn.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      34,
+      "bounded_strong_opinion",
+      "Có thể đưa ra nhận định mạnh nhưng phải thể hiện rõ đó là quan điểm hoặc trải nghiệm cá nhân, sử dụng những cách nói như 'tôi nghĩ', 'theo trải nghiệm của tôi', 'có lẽ' khi phù hợp.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      35,
+      "learning_loop",
+      "Khi viết về quá trình phát triển, ưu tiên logic: thử nghiệm đủ lâu -> nhận phản hồi -> phân tích -> điều chỉnh -> tiếp tục thử nghiệm.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      36,
+      "specific_cta",
+      "CTA phải liên quan trực tiếp đến chủ đề bài viết. Ưu tiên câu hỏi cụ thể giúp người đọc chia sẻ khó khăn, trải nghiệm hoặc nhu cầu thật.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      37,
+      "platform_adaptation",
+      "Không đăng lại cùng một bài theo ba phiên bản dài ngắn khác nhau. - Facebook: câu chuyện, bối cảnh và phân tích sâu hơn. - Threads: một nhận định hoặc câu hỏi trọng tâm. - Instagram: nội dung cô đọng, trực quan và dễ đọc nhanh.",
+      "2026-07-29 15:51:09"
+    ],
+    [
+      38,
+      "sample_facebook_user_edited_day1",
+      "[Nguồn: Người dùng trực tiếp chỉnh sửa - Mức độ giống giọng: 8/10 - Trạng thái: Mẫu tham chiếu đã xác nhận, chưa phải mẫu hoàn hảo - Mục đích: Học cách viết chân thật, có giới hạn trong nhận định, dùng trải nghiệm cụ thể và CTA tự nhiên] Tôi đang trực tiếp xây dựng kênh YouTube Faceless bằng AI từ con số 0. Và nói trước là tôi chưa có kết quả khủng hay con số doanh thu nào để khoe với bạn cả. Khắp nơi trên mạng, người ta khoe những nút bạc, nút vàng, những biểu đồ thu nhập tăng vọt nhờ công cụ này công cụ kia. Còn tôi, tôi bắt đầu hành trình này với một sự cẩn trọng. Tôi từng ấp ủ rất nhiều dự định tự xây dựng một thứ gì đó cho riêng mình. Bắt đầu với giao dịch forex, đốt những tài khoản 100$. Rồi chuyển sang tự học lập trình, thử viết copywriting, lại đá thêm một chút video editing. Nhưng tính tôi lúc đó hay phân tích thái quá. Đứng trước một kỹ năng mới, tôi thường nhìn thấy quá nhiều rủi ro, tự bào mòn động lực và không đi đến cùng. Mỗi thứ biết một tí rồi chẳng đâu vào đâu. Sự lặp lại đó ngốn của tôi quá nhiều thời gian. Cho đến khi tôi quyết định thử nghiệm nghiêm túc với YouTube Faceless AI. Lần này, thay vì tự ti hay loay hoay thầm lặng, tôi bắt đầu với một tâm thế khác: tập trung xây dựng quy trình và chấp nhận việc mình sẽ làm sai. Tôi đang mò mẫm những bước đầu tiên, tự học cách dùng ChatGPT, Claude, Gemini để làm nội dung và xem giới hạn thực sự của chúng nằm ở đâu. Tôi ghi lại toàn bộ hành trình này và chia sẻ nó công khai. Tại đây, bạn sẽ đọc được về những kịch bản AI nghe rập khuôn mà tôi đã tạo ra, những video có tỷ lệ giữ chân thấp, và cách tôi đang điều chỉnh từng bước để không bị ngợp giữa vô vàn công cụ. Mọi thứ đang được tôi hệ thống lại một cách nghiêm túc. Không có những lời hứa hẹn hào nhoáng, chỉ có những số liệu thực tế từ những thử nghiệm đang diễn ra hàng ngày. Có ai ở đây cũng đang có ý định, hoặc đang chật vật với những bước đi đầu tiên trên hành trình làm YouTube Faceless giống tôi không? Dừng lại một chút và chia sẻ nhé.",
+      "2026-07-29 15:51:21"
+    ],
+    [
+      39,
+      "sample_threads_user_edited_day1",
+      "[Nguồn: Người dùng trực tiếp chỉnh sửa - Mức độ giống giọng: 8/10 - Trạng thái: Mẫu tham chiếu đã xác nhận, chưa phải mẫu hoàn hảo - Mục đích: Học cách viết chân thật, có giới hạn trong nhận định, dùng trải nghiệm cụ thể và CTA tự nhiên] Tôi nhận ra vấn đề lớn nhất khi bắt đầu làm YouTube Faceless không phải là thiếu công cụ. Vấn đề là tôi chưa bao giờ theo đuổi một quy trình đủ lâu để nhận lại phản hồi và cải thiện. Lần này, tôi quyết định hệ thống lại cách làm và chia sẻ công khai mọi thử nghiệm từ những bước đầu tiên. Bạn thường mất bao lâu để quyết định từ bỏ khi bắt đầu học một kỹ năng mới?",
+      "2026-07-29 15:51:21"
+    ],
+    [
+      40,
+      "sample_instagram_user_edited_day1",
+      "[Nguồn: Người dùng trực tiếp chỉnh sửa - Mức độ giống giọng: 8/10 - Trạng thái: Mẫu tham chiếu đã xác nhận, chưa phải mẫu hoàn hảo - Mục đích: Học cách viết chân thật, có giới hạn trong nhận định, dùng trải nghiệm cụ thể và CTA tự nhiên] Slide 1: Tôi đang xây kênh YouTube Faceless AI từ con số 0. Slide 2: Sẽ không có những công thức làm giàu hay hứa hẹn đổi đời sau một đêm. Slide 3: Ở đây, tôi chia sẻ mọi kết quả thử nghiệm và những sai lầm thực tế nhất. Slide 4: Cùng cách tôi kết hợp các công cụ AI để xây dựng một quy trình gọn gàng. Slide 5: Nếu bạn cũng đang chật vật ở những bước đầu tiên, hãy theo dõi tôi nhé. [CAPTION] Khi bắt đầu học làm nội dung, tôi từng nghĩ mình chỉ cần tìm đúng một công cụ hoặc một mẹo nào đó là sẽ có kết quả ngay. Nhưng sau nhiều lần tự học rồi lại loay hoay với hàng tá kỹ năng khác nhau, tôi hiểu ra mọi thứ không diễn ra như vậy. Điều chúng ta thực sự cần không phải là một lối tắt, mà là một cách làm có hệ thống để liên tục kiểm chứng và sửa sai. Kênh này được lập ra để ghi chép lại toàn bộ quá trình tôi thử nghiệm làm YouTube Faceless bằng AI. Nó giống như một cuốn sổ tay mở, nơi tôi phân tích xem vì sao một video lại ít người xem, làm thế nào để kịch bản AI bớt rập khuôn, và cách quản lý công việc để không bị quá tải ở những bước đầu tiên. Không hào nhoáng, không tô hồng. Nếu bạn cũng đang có ý định hoặc đang chật vật mò mẫm những bước đầu tiên trên hành trình Faceless AI, hãy Follow để chúng ta có thể đi cùng nhau.",
+      "2026-07-29 15:51:21"
+    ]
+  ]
+}
