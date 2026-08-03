@@ -7,6 +7,7 @@ import os
 import urllib.request
 import datetime
 import threading
+from emails import EMAIL_1, EMAIL_2, EMAIL_3
 
 PORT = 8000
 DB_PATH = os.path.join(os.path.dirname(__file__), 'brain.db')
