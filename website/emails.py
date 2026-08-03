@@ -62,3 +62,19 @@ EMAIL_3 = {
 <p>Cảm ơn bạn đã theo dõi hành trình của tôi,<br>Quân.</p>
 """
 }
+
+EMAIL_CONFIRMATION = {
+    "subject": "Xác nhận đăng ký thành công Gói Hỗ Trợ 1:1",
+    "html": """
+<p>Chào bạn,</p>
+<p>Cảm ơn bạn đã tin tưởng và đăng ký gói <strong>Hỗ trợ 1:1</strong>.</p>
+<p>Thanh toán của bạn đã được hệ thống xác nhận thành công!</p>
+<p>Để bắt đầu, bạn vui lòng làm theo 2 bước sau nhé:</p>
+<ol>
+<li>Kết bạn Zalo với tôi qua số điện thoại: <strong>0948622969</strong> (Nhắn tin với nội dung: "Hỗ trợ 1:1 - [Tên của bạn]" để tôi nhận ra nhé).</li>
+<li>Chúng ta sẽ cùng trao đổi để chốt lịch gọi Video Call (30 phút) thuận tiện nhất cho bạn.</li>
+</ol>
+<p>Tôi rất mong chờ được trò chuyện và gỡ rối cùng bạn.</p>
+<p>Hẹn gặp bạn sớm,<br>Quân.</p>
+"""
+}

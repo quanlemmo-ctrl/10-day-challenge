@@ -7,7 +7,7 @@ import os
 import urllib.request
 import datetime
 import threading
-from emails import EMAIL_1, EMAIL_2, EMAIL_3
+from emails import EMAIL_1, EMAIL_2, EMAIL_3, EMAIL_CONFIRMATION
 
 PORT = 8000
 DB_PATH = os.path.join(os.path.dirname(__file__), 'brain.db')
@@ -214,11 +214,17 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                     content = (data.get('content') or data.get('transaction_content') or '').upper()
                     
                     # Tìm đơn hàng nào có payment_code (VD: HD0912...) nằm trong nội dung chuyển khoản
-                    rows = conn.execute('SELECT id, payment_code FROM orders WHERE status = "pending"').fetchall()
+                    rows = conn.execute('SELECT id, customer_id, payment_code FROM orders WHERE status = "pending"').fetchall()
                     for row in rows:
                         if row['payment_code'].upper() in content:
                             conn.execute('UPDATE orders SET status = "success" WHERE id = ?', (row['id'],))
                             conn.commit()
+                            
+                            # Lấy email khách hàng và gửi thư xác nhận
+                            customer = conn.execute('SELECT email FROM customers WHERE id = ?', (row['customer_id'],)).fetchone()
+                            if customer and customer['email']:
+                                threading.Thread(target=send_resend_email, args=(customer['email'], EMAIL_CONFIRMATION["subject"], EMAIL_CONFIRMATION["html"])).start()
+                                
                             break
                     
                     self.send_response(200)
