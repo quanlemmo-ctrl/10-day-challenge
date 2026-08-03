@@ -148,8 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const nameInput = document.getElementById('checkout-name');
       const phoneInput = document.getElementById('checkout-phone');
+      const emailInput = document.getElementById('checkout-email');
       
       const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
       let phone = phoneInput.value.trim().replace(/\s+/g, '');
       
       // Basic phone validation for VN (10 digits, starts with 0)
@@ -168,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch('/api/orders/create', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, phone })
+          body: JSON.stringify({ name, phone, email })
         });
         const data = await res.json();
         const orderId = data.order_id;

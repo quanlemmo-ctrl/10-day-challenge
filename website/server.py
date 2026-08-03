@@ -125,8 +125,8 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                     self.wfile.write(b'{"status": "ok"}')
                 elif path == '/api/orders/create':
                     cursor = conn.cursor()
-                    cursor.execute('INSERT INTO customers (name, phone) VALUES (?, ?)', 
-                                 (data.get('name', 'Khách'), data['phone']))
+                    cursor.execute('INSERT INTO customers (name, phone, email) VALUES (?, ?, ?)', 
+                                 (data.get('name', 'Khách'), data['phone'], data.get('email', '')))
                     customer_id = cursor.lastrowid
                     
                     # Giả định mua sản phẩm ID 1 (Hoặc sản phẩm đầu tiên)
