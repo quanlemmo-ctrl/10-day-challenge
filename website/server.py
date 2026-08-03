@@ -131,7 +131,7 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                     
                     # Giả định mua sản phẩm ID 1 (Hoặc sản phẩm đầu tiên)
                     cursor.execute('INSERT INTO orders (customer_id, product_id, status, payment_code) VALUES (?, ?, ?, ?)', 
-                                 (customer_id, 1, 'pending', f"HD{data['phone']}"))
+                                 (customer_id, 1, 'pending', f"SEVQR HD{data['phone']}"))
                     order_id = cursor.lastrowid
                     conn.commit()
                     

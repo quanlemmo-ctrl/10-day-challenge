@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const orderId = data.order_id;
 
         // Sinh URL mã QR của Sepay (Giá test: 2000đ)
-        const qrUrl = `https://qr.sepay.vn/img?acc=0868192288&bank=Vietinbank&amount=2000&des=HD${phone}`;
+        const qrUrl = `https://qr.sepay.vn/img?acc=0868192288&bank=Vietinbank&amount=2000&des=SEVQR%20HD${phone}`;
 
         // Tạo thẻ ảnh
         const qrImg = document.createElement('img');
