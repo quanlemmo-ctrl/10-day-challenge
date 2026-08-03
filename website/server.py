@@ -142,7 +142,7 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                 elif path == '/api/webhook/sepay':
                     # Sepay sẽ gọi vào đây khi có tiền vào
                     # Nội dung chuyển khoản thường nằm trong data['transaction_content']
-                    content = data.get('transaction_content', '').upper()
+                    content = (data.get('content') or data.get('transaction_content') or '').upper()
                     
                     # Tìm đơn hàng nào có payment_code (VD: HD0912...) nằm trong nội dung chuyển khoản
                     rows = conn.execute('SELECT id, payment_code FROM orders WHERE status = "pending"').fetchall()
