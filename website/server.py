@@ -4,6 +4,9 @@ import urllib.parse
 import json
 import sqlite3
 import os
+import urllib.request
+import datetime
+import threading
 
 PORT = 8000
 DB_PATH = os.path.join(os.path.dirname(__file__), 'brain.db')
@@ -13,10 +16,47 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
-import urllib.request
-import urllib.parse
-import os
-import json
+# Hàm lấy API key từ file (hoặc cấu hình cứng nếu deploy bị xoá)
+def get_resend_key():
+    try:
+        with open('resend_config.txt', 'r') as f:
+            return f.read().strip()
+    except:
+        return "" # Sẽ trả về lỗi nếu không có key
+
+# Hàm gọi API Resend
+def send_resend_email(to_email, subject, html_content, scheduled_at=None):
+    key = get_resend_key()
+    if not key:
+        print("Lỗi: Không tìm thấy API Key của Resend")
+        return
+        
+    payload = {
+        "from": "Quân <hi@lehoangquan.name.vn>",
+        "to": [to_email],
+        "subject": subject,
+        "html": html_content
+    }
+    
+    if scheduled_at:
+        payload["scheduled_at"] = scheduled_at
+
+    req = urllib.request.Request(
+        'https://api.resend.com/emails',
+        data=json.dumps(payload).encode('utf-8'),
+        headers={
+            'Authorization': f'Bearer {key}',
+            'Content-Type': 'application/json',
+            'User-Agent': 'Mozilla/5.0'
+        },
+        method='POST'
+    )
+    
+    try:
+        urllib.request.urlopen(req)
+        print(f"Đã gửi email tới {to_email}")
+    except Exception as e:
+        print(f"Lỗi gửi email tới {to_email}: {str(e)}")
 
 SEPAY_API_TOKEN = "DÁN_API_TOKEN_CỦA_BẠN_VÀO_ĐÂY"
 
@@ -140,10 +180,27 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                     self.end_headers()
                     self.wfile.write(json.dumps({"status": "ok", "order_id": order_id}).encode('utf-8'))
                 elif path == '/api/waitlist':
+                    email = data.get('email', '')
                     cursor = conn.cursor()
                     cursor.execute('INSERT INTO customers (name, email) VALUES (?, ?)', 
-                                 (data.get('name', 'Khách'), data.get('email', '')))
+                                 (data.get('name', 'Khách'), email))
                     conn.commit()
+                    
+                    if email:
+                        if '+test' in email:
+                            # Chế độ test: Gửi cả 3 email ngay lập tức
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_1["subject"], EMAIL_1["html"])).start()
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_2["subject"], EMAIL_2["html"])).start()
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_3["subject"], EMAIL_3["html"])).start()
+                        else:
+                            # Thực tế: Email 1 gửi ngay, Email 2 sau 2 ngày, Email 3 sau 3 ngày
+                            now = datetime.datetime.utcnow()
+                            t2 = now + datetime.timedelta(days=2)
+                            t3 = now + datetime.timedelta(days=3)
+                            
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_1["subject"], EMAIL_1["html"])).start()
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_2["subject"], EMAIL_2["html"], t2.isoformat() + "Z")).start()
+                            threading.Thread(target=send_resend_email, args=(email, EMAIL_3["subject"], EMAIL_3["html"], t3.isoformat() + "Z")).start()
                     
                     self.send_response(201)
                     self.send_header('Content-type', 'application/json')
