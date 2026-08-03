@@ -92,11 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'Đang xử lý...';
     btn.disabled = true;
 
-    fetch(GOOGLE_APP_SCRIPT_URL, {
+    fetch('/api/waitlist', {
       method: 'POST',
-      body: formData,
-      mode: 'no-cors'
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email })
     })
+    .then(res => res.json())
     .then(() => {
       freeForm.classList.remove('active');
       freeForm.style.display = 'none';

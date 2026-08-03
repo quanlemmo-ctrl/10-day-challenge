@@ -139,6 +139,16 @@ class AdminAPIHandler(http.server.SimpleHTTPRequestHandler):
                     self.send_header('Content-type', 'application/json')
                     self.end_headers()
                     self.wfile.write(json.dumps({"status": "ok", "order_id": order_id}).encode('utf-8'))
+                elif path == '/api/waitlist':
+                    cursor = conn.cursor()
+                    cursor.execute('INSERT INTO customers (name, email) VALUES (?, ?)', 
+                                 (data.get('name', 'Khách'), data.get('email', '')))
+                    conn.commit()
+                    
+                    self.send_response(201)
+                    self.send_header('Content-type', 'application/json')
+                    self.end_headers()
+                    self.wfile.write(b'{"status": "ok"}')
                 elif path == '/api/webhook/sepay':
                     # Sepay sẽ gọi vào đây khi có tiền vào
                     # Nội dung chuyển khoản thường nằm trong data['transaction_content']
